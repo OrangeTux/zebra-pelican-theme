@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>{{ SITENAME }} | {{ MOTTO }}</title>
-		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css">
-		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/github.css">
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Bree+Serif'>
-		<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-		</script>
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-			<h1 class="motto">{{ MOTTO }}</h1>
-			<div class="navbar">
-				<ul>
-					<li><a href="{{ SITEURL }}">Blog</a></li>
-					<li><a href="{{ SITEURL }}/categories.html">Categories</a></li>
-					<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
-					{% if DISPLAY_PAGES_ON_MENU %}
-						{% for page in PAGES %} <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>{% endfor %}
-					{% endif%}
-				</ul>
-			</div>
-			{% block page_title %}
-			{% endblock %}
-			{% block content %}
-			{% endblock %}
-			<footer>
-				<p>2013 <a href="{{ SITEURL }}">Ozan Yildiz</a> | Proudly powered by <a href="http://getpelican.com/‎">Pelican</a></p>
-			</footer>
+<head>
+	<meta charset="utf-8">
+	<title>{{ SITENAME }} | {{ MOTTO }}</title>
+	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css">
+	<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/github.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Bree+Serif'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	
+	{% include 'analytics.html' %}
+	{% include 'piwik.html' %}
+</head>
+<body>
+	<div class="container">
+		<h1 class="title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+		<h1 class="motto">{{ MOTTO }}</h1>
+		<div class="navbar">
+			<ul>
+				<li><a href="{{ SITEURL }}">Blog</a></li>
+				<li><a href="{{ SITEURL }}/categories.html">Categories</a></li>
+				<li><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+				{% if DISPLAY_PAGES_ON_MENU %}
+					{% for page in PAGES %} <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>{% endfor %}
+				{% endif%}
+			</ul>
 		</div>
-	</body>
+		{% block page_title %}
+		{% endblock %}
+		{% block content %}
+		{% endblock %}
+		<footer>
+			<p>2013 <a href="{{ SITEURL }}">Ozan Yildiz</a> | Proudly powered by <a href="http://getpelican.com/‎">Pelican</a></p>
+		</footer>
+	</div>
+</body>
 </html>
