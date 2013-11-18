@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block page_title %}
+<p class="page-title">List of all categories</p>
+{% endblock %}
+{% block content %}
+<ul>
+{% for category, articles in categories %}
+	<li><h2><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></h2></li>
+{% endfor %}
+</ul>
+{% endblock %}

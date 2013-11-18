@@ -1,0 +1,182 @@
+
+.container {
+	margin: 0 auto; 
+	width: 600px;
+}
+
+header {
+	margin-bottom: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bree Serif", serif;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	margin: 0;
+	padding: 0;
+}
+
+h1.title {
+	font-size: 72px;
+	line-height: 59px;
+	text-align: center;
+	margin: 35px 0px 10px 0px;
+}
+
+h1.motto {
+	font-size: 20px;
+	line-height: 29px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+
+.navbar {
+	font-size: 32px;
+	line-height: 40px;
+	font-family: "Bree Serif", serif;
+	margin: 25px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.navbar ul, .navbar li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar li:after {
+	content: "|";
+	margin-left: 5px;
+}
+
+.navbar li:last-child:after {
+	content: "";
+}
+
+a {
+	color: rgba(51, 51, 51, 1);
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CE2029;
+}
+.article {
+	margin-bottom: 25px;
+}
+
+p {
+	font-size: 17px;
+	line-height: 26px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 300;
+	color: rgba(51, 51, 51, 1);
+}
+
+p a {
+	color: #CE2029;
+}
+
+p a:hover {
+	color: #860A11;
+	text-decoration: underline;
+}
+
+.article h1 {
+	font-size: 35px;
+	line-height: 50px;
+	margin-bottom: 15px;
+	color: rgba(51, 51, 51, 1);
+}
+
+p.date {
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 2px;
+	border-width: 0px 0px 1px 0px;
+	border-style: dotted;
+	font-family: "Bree Serif", serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+p.info {
+	font-size: 14px;
+	line-height: 28px;
+	border-left: 5px solid;
+	font-weight: 400;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: rgba(51, 51, 51, 1);
+	text-align: left;
+	padding-left: 5px;
+}
+
+p.more {
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 400;
+	text-align: left;/**/
+	font-family: 'Merriweather Sans', sans-serif;
+	color: rgba(115, 115, 115, 1);
+	margin-bottom: 10px;
+}
+
+p.more a {
+	color: rgba(115, 115, 115, 1);;
+}
+
+p.more a:hover {
+	text-decoration: underline;
+}
+
+p.page-title {
+	font-size: 26px;
+	line-height: 36px;
+	font-family: "Bree Serif", serif;
+	margin-bottom: 20px;
+	background-color: rgba(51, 51, 51, 1);
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+.pagination p {
+	font-family: "Bree Serif", serif;
+	font-size: 26px;
+	line-height: 30px;
+}
+
+.pagination p a {
+	color: rgba(51, 51, 51, 1);
+	text-decoration: none;
+}
+
+.pagination p a:hover {
+	color: #CE2029;
+}
+
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+
+code {
+	background-color: #F9F9F9;
+	padding: 0 2px 0 2px;
+}
+
+.highlight {
+	font-size: 17px;
+	background-color: #F9F9F9;
+	padding: 3px 3px 3px 8px;
+}
+
+footer {
+	border-top: 1px dotted rgba(51, 51, 51, 1);
+	margin: 55px 0 35px 0;
+	padding-top: 15px;
+}

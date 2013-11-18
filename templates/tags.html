@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block page_title %}
+	<p class="page-title">List of all tags</p>
+{% endblock %}
+{% block content %}
+<ul>
+{% for tag, articles in tags %}
+	<li><h2><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></h2></li>
+{% endfor %}
+</ul>
+{% endblock %}
