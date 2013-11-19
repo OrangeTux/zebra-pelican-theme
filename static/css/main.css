@@ -111,6 +111,14 @@ p.date {
 	padding: 0;
 }
 
+dt {
+	margin-bottom: 2px;
+}
+
+dd {
+	margin-bottom: 6px;
+}
+
 p.info {
 	font-size: 14px;
 	line-height: 28px;
