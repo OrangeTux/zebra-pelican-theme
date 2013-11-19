@@ -67,7 +67,7 @@ a:hover {
 	margin-bottom: 25px;
 }
 
-p {
+p, li {
 	font-size: 17px;
 	line-height: 26px;
 	font-family: 'Merriweather Sans', sans-serif;
@@ -75,11 +75,11 @@ p {
 	color: rgba(51, 51, 51, 1);
 }
 
-p a {
+p a, li a {
 	color: #CE2029;
 }
 
-p a:hover {
+p a:hover, li a:hover {
 	color: #860A11;
 	text-decoration: underline;
 }
