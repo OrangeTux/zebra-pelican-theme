@@ -32,18 +32,30 @@ h1.motto {
 }
 
 .navbar {
-	font-size: 32px;
-	line-height: 40px;
-	font-family: "Bree Serif", serif;
 	margin: 25px;
 	text-align: center;
-	font-weight: 400;
 }
 
 .navbar ul, .navbar li {
+	font-size: 32px;
+	line-height: 40px;
+	font-family: "Bree Serif", serif;
+	font-weight: 400;
 	display: inline;
 	margin: 0;
 	padding: 0;
+}
+
+
+.navbar li a {
+	color: rgba(51, 51, 51, 1);
+	text-decoration: none;
+}
+
+
+.navbar li a:hover {
+	color: #CE2029;
+	text-decoration: none;
 }
 
 .navbar li:after {
