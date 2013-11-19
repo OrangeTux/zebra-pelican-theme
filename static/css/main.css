@@ -91,6 +91,14 @@ p a:hover {
 	color: rgba(51, 51, 51, 1);
 }
 
+.article h2 {
+	margin-top: 15px;
+}
+
+#disqus_thread {
+	margin-top: 15px;
+}
+
 p.date {
 	font-size: 20px;
 	line-height: 26px;
@@ -112,6 +120,7 @@ p.info {
 	color: rgba(51, 51, 51, 1);
 	text-align: left;
 	padding-left: 5px;
+	margin-top: 0px;
 }
 
 p.more {
@@ -121,7 +130,7 @@ p.more {
 	text-align: left;/**/
 	font-family: 'Merriweather Sans', sans-serif;
 	color: rgba(115, 115, 115, 1);
-	margin-bottom: 10px;
+	margin: 10px 0 -10px 0;
 }
 
 p.more a {
@@ -179,4 +188,8 @@ footer {
 	border-top: 1px dotted rgba(51, 51, 51, 1);
 	margin: 55px 0 35px 0;
 	padding-top: 15px;
+}
+
+footer p {
+	margin: 0px;
 }
