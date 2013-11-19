@@ -130,7 +130,7 @@ p.more {
 	text-align: left;/**/
 	font-family: 'Merriweather Sans', sans-serif;
 	color: rgba(115, 115, 115, 1);
-	margin: 10px 0 -10px 0;
+	margin: -10px 0 10px 0;
 }
 
 p.more a {
