@@ -9,7 +9,7 @@ Things that zebra provides:
 * Pagination
 * Google analytics
 * Index page with article summaries.
-* 
+* I'm not really good at coding CSS. There might be some wrong/unlogical things.
 
 Screenshot
 ---------
