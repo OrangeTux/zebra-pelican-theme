@@ -9,6 +9,17 @@ Things that zebra provides:
 * Pagination
 * Google analytics
 * Index page with article summaries.
+* 
+
+Screenshot
+---------
+
+![index screenshot](screenshot.png)
+
+Sites using this theme
+--------------------
+
+* [ozanyildiz.org](http://www.ozanyildiz.org)
 
 License
 ------
