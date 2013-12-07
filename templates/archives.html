@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block page_title %}
-	<p class="page-title">Archive</p>
+    <p class="page-title">Archive</p>
 {% endblock %}
 {% block content %}
-	{% for article in dates %}
-		<dt><p class="date">{{ article.locale_date }}</p></dt>
-		<dd><h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2></dd>
-	{% endfor %}
+    {% for article in dates %}
+        <dt><p class="date">{{ article.locale_date }}</p></dt>
+        <dd><h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2></dd>
+    {% endfor %}
 {% endblock %}

@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-	<div class="article">
-		<p class="date">{{ article.locale_date }}</p>
-		<h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-		{{ article.content }}
-		<p class="info">Posted by {{ article.author }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> with tags {% include 'taglist.html' %}</p>
-	</div>
-	<p>
-		{% if TWITTER_USERNAME %}
-			<a href="https://twitter.com/intent/tweet?url={{ SITEURL }}/{{ article.url }}&text={{article.title}}&via={{TWITTER_USERNAME}}"><i class="fa fa-twitter-square fa-2x"></i></a>
-		{% endif %}
-		<a href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}"><i class="fa fa-google-plus-square fa-2x"></i></a>
-		<a href="https://facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}"><i class="fa fa-facebook-square fa-2x"></i></a>
-	</p>
+    <div class="article">
+        <p class="date">{{ article.locale_date }}</p>
+        <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+        {{ article.content }}
+        <p class="info">Posted by {{ article.author }} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> with tags {% include 'taglist.html' %}</p>
+    </div>
+    <p>
+        {% if TWITTER_USERNAME %}
+            <a href="https://twitter.com/intent/tweet?url={{ SITEURL }}/{{ article.url }}&text={{article.title}}&via={{TWITTER_USERNAME}}"><i class="fa fa-twitter-square fa-2x"></i></a>
+        {% endif %}
+        <a href="https://plus.google.com/share?url={{ SITEURL }}/{{ article.url }}"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        <a href="https://facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}"><i class="fa fa-facebook-square fa-2x"></i></a>
+    </p>
 
-	{% include 'disqus.html' %}
+    {% include 'disqus.html' %}
 
 {% endblock %}
