@@ -20,6 +20,7 @@ Sites using this theme
 --------------------
 
 * [ozanyildiz.org](http://www.ozanyildiz.org)
+* [orangetux.github.io/blog](http://orangetux.github.io/blog/)
 
 License
 ------
