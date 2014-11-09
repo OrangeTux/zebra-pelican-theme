@@ -212,3 +212,7 @@ footer {
 footer p {
     margin: 0px;
 }
+
+.linenos {
+    line-height: 130%;
+}
