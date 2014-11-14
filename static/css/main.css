@@ -216,3 +216,7 @@ footer p {
 .linenos {
     line-height: 130%;
 }
+
+.highlighttable {
+    width: 100%;
+}
