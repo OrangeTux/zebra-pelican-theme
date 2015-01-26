@@ -64,6 +64,7 @@ h1.motto {
 
 .navbar li:last-child:after {
     content: "";
+    margin: 40px 0;
 }
 
 a {
@@ -74,8 +75,10 @@ a {
 a:hover {
     color: #CE2029;
 }
+
 .article {
     margin-bottom: 25px;
+    margin: 40px 0;
 }
 
 p, li {
@@ -201,6 +204,7 @@ code {
     font-size: 17px;
     background-color: #F9F9F9;
     padding: 3px 3px 3px 8px;
+    width: 789px;
 }
 
 footer {
@@ -215,8 +219,15 @@ footer p {
 
 .linenos {
     line-height: 130%;
+    width: 26px;
+}
+
+.linenodiv {
+    width: 26px;
+    text-align: right;
 }
 
 .highlighttable {
     width: 100%;
+    margin-left: -31px;
 }
